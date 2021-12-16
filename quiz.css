@@ -1,0 +1,117 @@
+body {
+    font-family: Arial;
+    font-size: 16px;
+    
+    background: rgb(214, 214, 214) !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.conteudo{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+}
+
+#nav-btn>div {
+    width: 20px;
+    height: 4px;
+    background-color: #0D2446;
+    margin: 4px 0px;
+    transition: all 0.4s linear;
+}
+
+#nav-btn:hover div {
+    background-color: #142e2a;
+}
+
+.caixa {
+    width: 500px;
+    padding: 20px;
+    min-height: 100px;
+    background-color: #fff;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+
+.cabecalho {
+    font-family: fantasy;
+    background-color: #0b58a7;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    margin: -20px -20px 20px;
+    border-radius: 15px 15px 0 0;
+    font-size: 20px;
+}
+
+.questao {
+    display: none;
+}
+
+.questao.active {
+    display: block;
+}
+
+.questao h4 {
+    margin: 0 0 15px;
+    font-size: 20px;
+}
+
+.respostas {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.respostas input {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.respostas span {
+    display: block;
+    padding: 8px 15px;
+    background-color: #bad0c9;
+    border-radius: 15px;
+    transition: all 0.3s ease-out;
+}
+
+.respostas:hover span {
+    background-color: #9ab5ac;
+}
+
+.respostas input:checked + span {
+    background-color: #f93c3c;
+}
+
+.respostas input[valido]:checked + span {
+    background-color: green;
+    color: #fff;
+}
+
+.rodape {
+    padding: 10px 0 0;
+    text-align: right;
+}
+
+.btn1 {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #0b58a7;
+    color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3 ease-out;
+}
+
+.btn1:hover {
+    background-color: #064484;
+}

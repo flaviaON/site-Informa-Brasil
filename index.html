@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Links css -->
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/quiz.css">
+  <link rel="stylesheet" href="css/jogo.css">
+
+  <!-- link bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+  <!-- Link externo chart.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+
+  <!-- Icon da aba -->
+  <link rel="sortcut icon" href="img/no-virus.png" type="image/png" />
+
+  <!-- Título -->
+  <title>Informa Brasil</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white shadow-sm p-2 px-5 bg-white">
+    <a href="index.html" class="navbar-brand">
+      <img src="img/mask.png" class="img-fluid" width="40">
+    </a>
+
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <nav id="nav-btn">
+        <div></div>
+        <div></div>
+        <div></div>
+      </nav>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active ml-auto">
+          <a href="" class="nav-link text-primary font-weight-bold">Home</a>
+        </li>
+
+        <li class="nav-item pl-lg-4 ml-auto">
+          <a href="#podcasts" class="nav-link font-weight-bold text-primary">Podcasts</a>
+        </li>
+
+        <li class="nav-item pl-lg-4 ml-auto">
+          <a href="#graficos" class="nav-link font-weight-bold text-primary">Gráficos</a>
+        </li>
+
+        <li class="nav-item pl-lg-4 ml-auto">
+          <a href="#quiz" class="nav-link font-weight-bold text-primary">Quiz</a>
+        </li>
+
+        <li class="nav-item pl-lg-4 ml-auto">
+          <a href="#jogoMemoria" class="nav-link font-weight-bold text-primary">Jogo da Memória</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+
+  <!-- Texto Topo -->
+  <div class="container-fluid row mx-0 px-0">
+
+    <div class="col-12 col-xl-8 px-5 mt-5">
+      <h1 class="text-primary mb-5"><strong>INFORMA BRASIL</strong></h1>
+
+      <p class="text-justify" style="font-size: 20px;">
+        <Strong class="text-primary">O seu painel informativo sobre o Coronavírus no Brasil.</Strong>
+      </p>
+
+      <div class="d-block d-md-none" style="height: 20px;"></div>
+
+      <p class="text-justify" style="font-size: 20px;">
+        Para vencer o coronavírus a premissa é uma só: Brasil unido por uma Pátria vacinada e informada.
+        Confira em nosso painel dados e informações relacionados a pandemia de COVID-19.
+      </p>
+    </div>
+
+    <div class="col-4 mt-3 ml-0 pl-0 d-none d-xl-flex">
+      <img src="img/bacteria.png" class="img-fluid">
+    </div>
+
+  </div>
+
+  <!-- Efeito de vidro -->
+
+  <div class="containerGlass">
+    <div class="cardTopo">
+
+      <div class="content">
+        <img src="img/podcast.png" alt="" class="imgGlass">
+        <h3>PodCasts</h3>
+        <p>Acesse os PodCasts e mantenha-se informado.</p>
+        <a href="#podcasts">Acesse</a>
+      </div>
+    </div>
+
+    <div class="cardTopo">
+
+      <div class="content">
+        <img src="img/dados.png" alt="" class="imgGlass">
+        <h3>Estatísticas</h3>
+        <p>Veja as estatísticas sobre o Covid.</p>
+        <a href="#graficos">Acesse</a>
+      </div>
+    </div>
+
+    <div class="cardTopo">
+
+      <div class="content">
+
+        <img src="img/game.png" alt="" class="imgGlass">
+        <h3>Jogo da Memória</h3>
+        <p>Você é bom de cabeça? Teste com o nosso jogo da mémoria.</p>
+        <a href="#jogoMemoria">Acesse</a>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- Podcast -->
+  <div class="h1 mx-auto pt-5" id="podcasts">
+    <p class="text-center d-none d-md-block pt-5">
+      Mantenha-se sempre informado <br>
+      com os melhores podcast sobre o tema!
+    </p>
+  </div>
+
+  <!--Links Podcast GG -->
+
+  <div class="container-fluid d-none d-md-flex row my-5 mx-0 px-0">
+    <div class="col-lg-4 col-md-6">
+      <iframe src="https://open.spotify.com/embed/episode/48W0v2upm60iKFt0M7681f?utm_source=generator" width="100%"
+        height="232" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; 
+            fullscreen; picture-in-picture"></iframe>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <iframe src="https://open.spotify.com/embed/episode/6Omy0Ia1LvGNlRa1QGiiml?utm_source=generator" width="100%"
+        height="232" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; 
+            fullscreen; picture-in-picture"></iframe>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <iframe src="https://open.spotify.com/embed/episode/3I9GxgJVbBAZNajWsPPTNq?utm_source=generator" width="100%"
+        height="232" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; 
+            fullscreen; picture-in-picture"></iframe>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <iframe src="https://open.spotify.com/embed/episode/6CAhZ8yMH9r8NEC7F5romh?utm_source=generator&theme=0"
+        width="100%" height="232" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; 
+            fullscreen; picture-in-picture"></iframe>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <iframe src="https://open.spotify.com/embed/episode/5c539NAP19k54Gq5X72Exu?utm_source=generator&theme=0"
+        width="100%" height="232" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; 
+            fullscreen; picture-in-picture"></iframe>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <iframe src="https://open.spotify.com/embed/episode/0SA5skRZm8os9X6bzJJcui?utm_source=generator&theme=0"
+        width="100%" height="232" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; 
+            fullscreen; picture-in-picture"></iframe>
+    </div>
+
+  </div>
+
+  <!--Links  Podcasts P -->
+  <div class="container-fluid d-flex d-md-none row my-5 mx-0 px-0">
+    <div class="col-lg-4 col-md-6">
+      <iframe src="https://open.spotify.com/embed-podcast/episode/6wk6mWwd7xA4JiSrZGMPFg" width="100%" height="160"
+        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <iframe src="https://open.spotify.com/embed-podcast/episode/2pYfrGTOzi2sVz7CpogCX9" width="100%" height="160"
+        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <iframe src="https://open.spotify.com/embed-podcast/episode/3jx7Sd3rJtRwFEiwDykZXb" width="100%" height="160"
+        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <iframe src="https://open.spotify.com/embed-podcast/episode/2vD0WJzQLAb1n0PSBh7Qws" width="100%" height="160"
+        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+    <div class="col-12 col-lg-4 col-md-6">
+      <iframe src="https://open.spotify.com/embed-podcast/episode/0A4fU4cp6bmz3bFtPetSI1" width="100%" height="160"
+        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <iframe src="https://open.spotify.com/embed-podcast/episode/5lTngnTZTBaBzfTlPmKthn" width="100%" height="160"
+        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+  </div>
+
+
+  <!--rodapé grande-->
+  <div class="jumbotron d-none d-md-block jumbotron-fluid mt-0 text-white text-center mb-0"
+    style="background-color: #0D2446;">
+    <div class="container">
+      <p class="h1 py-1">
+        Em 2021 o Ministério da Saúde apresentou o Plano Nacional de Operacionalização da Vacinação contra a Covid-19,
+        uma medida adicional de resposta ao enfrentamento do COVID-19, tida como Emergência de Saúde Pública
+        de Importância Internacional (ESPII), mediante ações de vacinação nos três níveis de gestão.
+        Nesta página você vai encontrar Gráficos, Dados e Informes Técnicos relacionados
+        à maior campanha de vacinação da história do Brasil.
+      </p>
+    </div>
+  </div>
+
+  <!--rodapé pequeno -->
+  <div class="jumbotron d-block d-md-none jumbotron-fluid mt-0 text-white text-center mb-0 star"
+    style="background-color: #0D2446;">
+    <div class="container">
+      <p class="h5 d-block d-md-none px-3 py-2">
+        Em 2021 o Ministério da Saúde apresentou o Plano Nacional de Operacionalização da Vacinação contra a Covid-19,
+        uma medida adicional de resposta ao enfrentamento do COVID-19, tida como Emergência de Saúde Pública
+        de Importância Internacional (ESPII), mediante ações de vacinação nos três níveis de gestão.
+        Nesta página você vai encontrar Gráficos, Dados e Informes Técnicos relacionados
+        à maior campanha de vacinação da história do Brasil.
+      </p>
+    </div>
+  </div>
+
+  <!-- Gráficos com chart.js -->
+
+  <!-- Gráfico I -->
+  <div class="h1 mx-auto text-danger pt-5" id="graficos"> </div>
+  <div class="container-fluid pt-5">
+    <canvas class="my-4 w-100" id="tabII" width="900" height="380"></canvas>
+
+    <p>Fonte: <a href="https://www.google.com/search?q=grafico+mortes+covid+brasil&rlz=1C1FCXM_
+      pt-PTBR969BR969&biw=1366&bih=663&sxsrf=AOaemvJTdui9IUwJzd63RD-3eBJBlqD3gQ%3A1639604610141&ei
+      =gmG6YermB43W1sQP0KS0kAs&oq=grafico+mortes&gs_lcp=Cgdnd3Mtd2l6EAMYADIFCAAQgAQyBQgAEIAEMgUIABC
+      ABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BAgjECc6CAgAEIAEELEDOhEIL
+      hCABBCxAxCDARDHARDRAzoLCAAQgAQQsQMQgwE6BAgAEEM6BQguEIAEOgQILhBDOggILhCABBCxAzoHCAAQyQMQQzoFCAA
+      QkgM6CAgAEIAEEMkDSgQIQRgASgQIRhgAUABY7w1gmBVoAHAAeACAAbQBiAGGEZIBBDAuMTSYAQCgAQHAAQE&sclient=gws-wiz">
+        Wikipédia e outros</a></p>
+    </main>
+  </div>
+  </div>
+
+  <!--rodapé grande-->
+  <div class="jumbotron d-none d-md-block jumbotron-fluid mt-0 text-white text-center mb-0"
+    style="background-color: #0D2446;">
+    <div class="container">
+      <p class="h1 py-1">
+        Com o Brasil chegando à triste marca de 600 mil mortos por covid. Houveram milhares de famílias enlutadas e
+        destroçadas por essa tragédia que infelizmente ainda não terminou. Devido á má gestão da parte dos seus
+        governantes o páis se viu a beira de um colapso, com hospitais de atendimento lotados e inocentes morrendo em
+        seus corredores.
+      </p>
+    </div>
+  </div>
+
+  <!--rodapé pequeno -->
+  <div class="jumbotron d-block d-md-none jumbotron-fluid mt-0 text-white text-center mb-0 star"
+    style="background-color: #0D2446;">
+    <div class="container">
+      <p class="h5 d-block d-md-none px-3 py-2">
+        Em 2021 o Ministério da Saúde apresentou o Plano Nacional de Operacionalização da Vacinação contra a Covid-19,
+        uma medida adicional de resposta ao enfrentamento do COVID-19, tida como Emergência de Saúde Pública
+        de Importância Internacional (ESPII), mediante ações de vacinação nos três níveis de gestão.
+        Nesta página você vai encontrar Gráficos, Dados e Informes Técnicos relacionados
+        à maior campanha de vacinação da história do Brasil.
+      </p>
+    </div>
+  </div>
+
+  <!-- Gráfico II -->
+
+  <div class="h1 mx-auto text-danger"> </div>
+  <div class="container-fluid">
+    <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+
+    <p>Fonte: <a href="https://ourworldindata.org/explorers/coronavirus-data-explorer?zoomToSelection=true&time=2021-02-
+      05&facet=none&pickerSort=asc&pickerMetric=location&Metric=People+vaccinated+%28by+dose%29&Interval=7-day+rolling+av
+      erage&Relative+to+Population=true&Align+outbreaks=false&country=~BRA">
+        ourworldindata.org</a></p>
+
+    </main>
+  </div>
+  </div>
+
+  <!-- Quiz -->
+  <!-- ======================================================================================= -->
+  <!--div grande-->
+  <div class="jumbotron d-none d-md-block jumbotron-fluid mt-0 text-white text-center mb-0"
+    style="background-color: #0D2446;">
+    <div class="container">
+      <p class="h1 py-1">
+        Agora que você chegou até aqui, participe de nosso quiz e teste seus conhecimentos sobre o tema. <br>
+        São um total de 5 perguntas valendo 20 pontos cada, mas atenção, pois você só terá 25 segundos para cada
+        questão.
+      </p>
+    </div>
+  </div>
+
+  <!--div pequena -->
+  <div class="jumbotron d-block d-md-none jumbotron-fluid mt-0 text-white text-center mb-0 star"
+    style="background-color: #0D2446;">
+    <div class="container">
+      <p class="h5 d-block d-md-none px-3 py-2">
+        Agora que você chegou até aqui, participe de nosso quiz e teste seus conhecimentos sobre o tema. <br>
+        São um total de 5 perguntas valendo 20 pontos cada, mas atenção, pois você só terá 25 segundos para cada
+        questão.
+      </p>
+    </div>
+  </div>
+
+  <div class="conteudo" id="quiz">
+    <div class="caixa">
+      <div class="cabecalho">
+        <span>Pontuação: <span id="pontuacao">0</span></span>
+        <span id="contador">0</span>
+      </div>
+      <div class="corpo">
+        <div class="questao active">
+          <h4>O que é COVID-19?</h4>
+          <div class="respostas">
+            <input type="radio" name="r1">
+            <span>É uma doença infecciosa respiratória aguda, causada pelo vírus Influenza, do tipo A.</span>
+          </div>
+
+          <div class="respostas">
+            <input type="radio" name="r1" valido="valido">
+            <span>É uma infecção respiratória aguda causada pelo coronavírus SARS-CoV-2.</span>
+          </div>
+
+          <div class="respostas">
+            <input type="radio" name="r1">
+            <span>É uma cerveja do tipo Pilsen, produzida pela primeira vez em 1925 pela Cervecería Modelo. </span>
+          </div>
+
+          <div class="respostas">
+            <input type="radio" name="r1">
+            <span>É um virus que ataca o sistema imunilógico, responsavel por defender o organismo de doenças. Atacando
+              principalmente os linfócitos T CD4+. </span>
+          </div>
+        </div>
+
+        <div class="questao">
+          <h4>Dentre essas, qual a melhor forma de se evitar a COVID-19?</h4>
+          <div class="respostas">
+            <input type="radio" name="r2">
+            <span>Tomar pílula anticoncepcional diariamente, sempre no mesmo horario, durante 21 dias, até o final da
+              cartela.</span>
+          </div>
+
+          <div class="respostas">
+            <input type="radio" name="r2">
+            <span>Ao se expor ao sol, usar proteção solar, hidratar a pele, evitar lesões no corpo e manter habitos
+              alimentícios saudavéis.</span>
+          </div>
+
+          <div class="respostas">
+            <input type="radio" name="r2">
+            <span>Não fumar, manter peso corporal adequado, praticar atividades fisicas, não votar no PT, evitar comer
+              comida processada.</span>
+          </div>
+
+          <div class="respostas">
+            <input type="radio" name="r2" valido="valido">
+            <span>Lavar as mãos com frequecia, evitar contato próximo, usar máscara, usar alcool em gel
+              regulamente.</span>
+          </div>
+        </div>
+
+        <div class="questao">
+          <h4>O que não fazer durante a pandemia?</h4>
+          <div class="respostas">
+            <input type="radio" name="r3">
+            <span>Se vacinar.</span>
+          </div>
+
+          <div class="respostas">
+            <input type="radio" name="r3" valido="valido">
+            <span>Frequentar lugares cheios sem máscara.</span>
+          </div>
+
+          <div class="respostas">
+            <input type="radio" name="r3">
+            <span>Usar máscara.</span>
+          </div>
+
+          <div class="respostas">
+            <input type="radio" name="r3">
+            <span>Ficar em casa.</span>
+          </div>
+        </div>
+
+        <div class="questao">
+          <h4>A pandemia que assolou o mundo em 2019 é causada pelo COVID-...</h4>
+          <div class="respostas">
+            <input type="radio" name="r4">
+            <span>18</span>
+          </div>
+
+          <div class="respostas">
+            <input type="radio" name="r4" valido="valido">
+            <span>19</span>
+          </div>
+
+          <div class="respostas">
+            <input type="radio" name="r4">
+            <span>68</span>
+          </div>
+
+          <div class="respostas">
+            <input type="radio" name="r4">
+            <span>42</span>
+          </div>
+        </div>
+
+        <div class="questao">
+          <h4>Ao me vacinar, estarei completamente imune ao corona virus?</h4>
+          <div class="respostas">
+            <input type="radio" name="r5">
+            <span>Sim, porque a eficácia da vacina é de 100%.</span>
+          </div>
+
+          <div class="respostas">
+            <input type="radio" name="r5" valido="valido">
+            <span>Não, a vacina reduzirá o risco de desenvolver complicações pela covid 19.</span>
+          </div>
+
+          <div class="respostas">
+            <input type="radio" name="r5">
+            <span>Não, pois ainda é necessário tomar comprimidos diariamente para reforçar a vacina.</span>
+          </div>
+
+          <div class="respostas">
+            <input type="radio" name="r5">
+            <span>Sim, porque o Bolsonaro disse.</span>
+          </div>
+        </div>
+
+        <div class="questao">
+          <h4>Sua pontuação total é <span id="total">0</span> de 100</h4>
+        </div>
+
+      </div>
+
+      <div class="rodape">
+        <span class="btn1" id="pular">Pular</span>
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <!--div grande-->
+  <div class="jumbotron d-none d-md-block jumbotron-fluid mt-0 text-white text-center mb-0"
+    style="background-color: #0D2446;">
+    <div class="container">
+      <p class="h1 py-1">
+        Você é bom de cabeça? Abaixo nosso jogo da mémoria
+      </p>
+    </div>
+  </div>
+
+  <!--div pequena -->
+  <div class="jumbotron d-block d-md-none jumbotron-fluid mt-0 text-white text-center mb-0 star"
+    style="background-color: #0D2446;">
+    <div class="container">
+      <p class="h5 d-block d-md-none px-3 py-2">
+        Você é bom de cabeça? Abaixo nosso jogo da mémoria
+      </p>
+    </div>
+  </div>
+
+
+  <div class="conteudoJogo" id="jogoMemoria">
+    <section class="JogoDaMemoria">
+      <div class="card" data-framework="bozo">
+        <img class="frente" src="img/Jogo/bolso.jpg" alt="Bozoro" />
+        <img class="verso" src="img/Jogo/JOGO DA MEMÓRIA.png" alt="Jogo of Memória" />
+      </div>
+      <div class="card" data-framework="bozo">
+        <img class="frente" src="img/Jogo/bolso.jpg" alt="Bozoro" />
+        <img class="verso" src="img/Jogo/JOGO DA MEMÓRIA.png" alt="Jogo of Memória" />
+      </div>
+  
+      <div class="card" data-framework="alcool">
+        <img class="frente" src="img/Jogo/gel-hidroalcoolico.png" alt="Alcool" />
+        <img class="verso" src="img/Jogo/JOGO DA MEMÓRIA.png" alt="Jogo of Memória" />
+      </div>
+      <div class="card" data-framework="alcool">
+        <img class="frente" src="img/Jogo/gel-hidroalcoolico.png" alt="Alcool" />
+        <img class="verso" src="img/Jogo/JOGO DA MEMÓRIA.png" alt="Jogo of Memória" />
+      </div>
+  
+      <div class="card" data-framework="mask">
+        <img class="frente" src="img/Jogo/mascara-medica.png" alt="Mascara" />
+        <img class="verso" src="img/Jogo/JOGO DA MEMÓRIA.png" alt="Jogo of Memória" />
+      </div>
+      <div class="card" data-framework="mask">
+        <img class="frente" src="img/Jogo/mascara-medica.png" alt="Mascara" />
+        <img class="verso" src="img/Jogo/JOGO DA MEMÓRIA.png" alt="Jogo of Memória" />
+      </div>
+  
+      <div class="card" data-framework="omi">
+        <img class="frente" src="img/Jogo/ppe.png" alt="PPE" />
+        <img class="verso" src="img/Jogo/JOGO DA MEMÓRIA.png" alt="Jogo of Memória" />
+      </div>
+      <div class="card" data-framework="omi">
+        <img class="frente" src="img/Jogo/ppe.png" alt="PPE" />
+        <img class="verso" src="img/Jogo/JOGO DA MEMÓRIA.png" alt="Jogo of Memória" />
+      </div>
+  
+      <div class="card" data-framework="virus">
+        <img class="frente" src="img/Jogo/virus.png" alt="Virús" />
+        <img class="verso" src="img/Jogo/JOGO DA MEMÓRIA.png" alt="Jogo of Memória" />
+      </div>
+      <div class="card" data-framework="virus">
+        <img class="frente" src="img/Jogo/virus.png" alt="Virús" />
+        <img class="verso" src="img/Jogo/JOGO DA MEMÓRIA.png" alt="Jogo of Memória" />
+      </div>
+  
+      <div class="card" data-framework="gota">
+        <img class="frente" src="img/Jogo/ze-gotinha.png" alt="zéGota" />
+        <img class="verso" src="img/Jogo/JOGO DA MEMÓRIA.png" alt="Jogo of Memória" />
+      </div>
+      <div class="card" data-framework="gota">
+        <img class="frente" src="img/Jogo/ze-gotinha.png" alt="zéGota" />
+        <img class="verso" src="img/Jogo/JOGO DA MEMÓRIA.png" alt="Jogo of Memória" />
+      </div>
+    </section>
+  
+    
+       
+          
+
+
+    </div>
+
+  </div>
+
+
+  <!-- Principal JavaScript do Bootstrap
+  ================================================== -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+
+
+  <!-- Gráficos -->
+
+  <script>
+    var ctx = document.getElementById("myChart").getContext('2d');
+    var myChart = new Chart(ctx, {
+      type: 'line',
+
+      data: {
+        labels: ["Janeiro", "Março", "Maio", "Julho", "Setembro", "Outubro", "Novembro", "Dezembro"],
+        datasets: [{
+          label: "Casos de mortes devido ao COVID-19 no Brasil em 2021",
+          backgroundColor: 'rgb(54,54,54)',
+          borderColor: '#007bff',
+          borderWidth: 4,
+          pointBackgroundColor: '#007bff',
+          data: [1067, 2710, 1838, 1017, 541, 320, 231, 136]
+        }]
+      },
+    });
+
+    // ==========================================================================================
+    // Tab II
+
+    var ctxII = document.getElementById("tabII").getContext('2d');
+    var tabII = new Chart(ctxII, {
+      type: 'line',
+
+      data: {
+        labels: ["Janeiro", "Março", "Maio", "Julho", "Setembro", "Outubro", "Novembro", "Dezembro"],
+        datasets: [{
+          label: "Parcela de pessoas vacinadas ontra COVID-19 no Brasil",
+          backgroundColor: 'rgb(0,255,127)',
+          borderColor: '#007bff',
+          borderWidth: 4,
+          pointBackgroundColor: '#007bff',
+          data: [0, 2126, 40394, 51024, 89292, 114804, 133938, 138190]
+        }]
+      },
+
+    });
+  </script>
+
+    <!-- Link JS do CharJs-->
+    <script src="js/chart.js"></script>
+
+  <!-- Link JS do Quiz -->
+  <script src="js/quiz.js"></script>
+
+  <!-- Link JS do Jogo -->
+  <script src="js/jogo.js"></script>
+
+  <!-- Links externos JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
